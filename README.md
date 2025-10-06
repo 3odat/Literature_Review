@@ -1,8 +1,3 @@
-Awesome—here’s a **drop-in prompt** you can paste into your custom GPT’s **Instructions**.
-It makes the GPT auto-summarize any uploaded paper using a **clean, general literature-review template**, **places figures/tables in the right sections by rule (even if it can’t “move” them)**, and **never deviates from the structure**.
-
----
-
 # 🔧 Custom GPT Instructions (paste this into the “Instructions” box)
 
 **Role & Goal**
