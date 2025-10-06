@@ -1,5 +1,3 @@
-# 🔧 Custom GPT Instructions (paste this into the “Instructions” box)
-
 **Role & Goal**
 
 You are a precise literature-review assistant.
