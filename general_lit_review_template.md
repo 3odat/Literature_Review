@@ -1,223 +1,255 @@
-# 📚 Literature Review — Per-Paper Template (General, Domain-Agnostic)
-_Last updated: 2025-10-06_
-
-> **How to use**: Duplicate this file per paper. Keep answers concise but complete.
-> Suggested workflow: **Pass 1 (skim)** → **Pass 2 (method/results)** → **Pass 3 (replication & synthesis)**.
+Got it 👍—you want a **clean, professional, and visually enhanced template** for reading and summarizing research papers, not project-specific.
+Here’s the **refined and beautifully formatted version**, perfect for Obsidian, Notion, or a research log.
+It includes **sub-sections for figures/tables**, placeholders for visual material, and consistent headings.
 
 ---
 
-## 🧭 1) Bibliographic Information
-- **Title:** 
-- **Authors & Affiliations:** 
-- **Year / Venue / DOI:** 
-- **URL(s):** Publisher / arXiv / Code / Dataset
-- **Keywords (5–10):** 
-- **Field / Subfield:** 
-- **Reference key (BibTeX/ID):** 
-
-> **Tagging tip:** Add 3–5 thematic tags you’ll re-use across papers (e.g., *task allocation*, *causal inference*, *privacy*, *optimization*).
+# 📚 Literature Review Template (Professional Academic Format)
 
 ---
 
-## 🧩 2) Research Context (Background)
-**Problem / Gap**
-- What gap does the paper address? Why does it matter?
-- Prior state-of-the-art: who did *what* before (2–4 key citations)?
+## 🧭 1. **Bibliographic Information**
 
-**Motivation / Significance**
-- Why now? Practical or theoretical urgency? Stakeholders?
+*(Always fill this section first — helps organize your Zotero, Notion, or Mendeley later)*
 
-**Limitations of existing work**
-- Summarize common weaknesses (scalability, assumptions, data bias, reproducibility, etc.).
+| Field                       | Entry                                           |
+| :-------------------------- | :---------------------------------------------- |
+| **Title:**                  |                                                 |
+| **Authors & Affiliations:** |                                                 |
+| **Year / Venue / DOI:**     |                                                 |
+| **Keywords:**               |                                                 |
+| **Field / Subfield:**       |                                                 |
+| **Reference Type:**         | Journal / Conference / Workshop / Thesis / Book |
 
-> **Cluster note:** Which theme(s) does this paper belong to for your review? (e.g., *planning*, *optimization*, *evaluation*).
+📘 **Figure / Table references**
 
-**(Optional figure: Context map)**
+* *Figure 1: Paper architecture overview*
+* *Table 1: Dataset summary*
+  *(Add more as you read — helps when citing visuals later.)*
+
+---
+
+## 🧩 2. **Research Context (Background)**
+
+**2.1. Problem or Gap**
+
+* What unsolved challenge or limitation does the paper address?
+* Why does this gap exist in the literature?
+
+**2.2. Importance / Motivation**
+
+* Why is this topic important now?
+
+  * 🧠 Scientific motivation
+  * 🌍 Societal or industry relevance
+
+**2.3. Related Work Summary**
+
+* Who tackled this before, and how?
+* Strengths and weaknesses of prior approaches.
+
+**2.4. Limitations of Existing Work**
+
+* Scalability? Cost? Assumptions? Missing benchmarks?
+
+📊 **Figure Suggestion:** “State of the Art Landscape”
+
 ```
-[Domain Landscape Diagram Placeholder]
-  Area A ──┬── Prior Work 1
-           ├── Prior Work 2
-           └── This Paper's Niche → (states contribution boundary)
+[Domain area diagram — showing prior work clusters and the gap this paper fills]
 ```
 
 ---
 
-## 💡 3) Research Question(s) or Hypotheses
-- **Primary research question:** (one sentence, testable)
-- **Secondary questions / objectives:** (bullets)
-- **Explicit hypotheses (if any):** H1, H2, …
-- **Success criteria:** What outcomes would *confirm* or *disconfirm* the claim?
+## 💡 3. **Research Question or Hypothesis**
 
-> **Sanity check prompt:** If I had to test this in one sentence, what would I measure and compare?
+**3.1. Central Question**
+
+* What exact question does the paper answer?
+
+**3.2. Objectives**
+
+* What are the main goals or deliverables of this study?
+
+**3.3. Hypotheses**
+
+* Are there testable hypotheses (H1, H2, …)?
+
+**3.4. Expected Outcomes**
+
+* What would confirm or reject these hypotheses?
+
+📉 *Table reference:* e.g., *Table 2: Hypotheses and Corresponding Metrics.*
 
 ---
 
-## ⚙️ 4) Methodology (Core of the Paper)
-**Study type** (theoretical / empirical / simulation / experimental / observational / qualitative / mixed):  
-**Design** (randomized, controlled, cross-sectional, longitudinal, case study, A/B, etc.):  
+## ⚙️ 4. **Methodology (Core of the Paper)**
 
-**Model / Framework**
-- High-level description (algorithms, theory, pipeline)
-- Key assumptions (data, independence, stationarity, rationality, etc.)
-- Complexity or scalability notes (Big-O, parameters, resources)
+**4.1. Framework / Model Overview**
 
-**Data / Environment**
-- Data source(s) / simulator(s) / setting(s)
-- Sampling strategy & inclusion/exclusion criteria
-- Preprocessing steps
+* Describe the approach: algorithm, architecture, or theoretical model.
 
-**Variables & Measures**
-- Inputs / Covariates:
-- Outputs / Dependent variables:
-- Confounders / Controls:
+**4.2. Data / Simulation Environment**
 
-**Procedures / Interventions (if any)**
-- Treatment(s), conditions, task protocols, instructions
+* What datasets, simulators, or sources are used?
+* Key assumptions or constraints?
 
-**Evaluation Metrics**
-- Primary metrics (with definitions)
-- Secondary or diagnostic metrics
-- Statistical tests (e.g., t-test, ANOVA, bootstrap), effect sizes, CIs, corrections
+**4.3. Variables**
 
-**Tools / Software / Hardware**
-- Libraries / packages / versions
-- Compute resources (CPU/GPU/RAM), time budget
+| Variable     | Type | Description |
+| ------------ | ---- | ----------- |
+| Input(s)     |      |             |
+| Parameter(s) |      |             |
+| Output(s)    |      |             |
 
-**(Optional figure: Method diagram)**
+**4.4. Evaluation Metrics**
+
+* Accuracy, precision, recall, F1-score, latency, coverage, etc.
+
+**4.5. Tools / Software / Hardware**
+
+* What platforms and tools were used (e.g., Python, MATLAB, ROS, GPUs)?
+
+📈 **Figure Suggestion:** “Methodology Flowchart”
+
 ```mermaid
 flowchart LR
-A[Inputs/Data] --> B[Preprocess]
-B --> C[Model/Algorithm]
-C --> D[Evaluation Metrics]
-D --> E[Results]
+A[Input / Dataset] --> B[Algorithm / Model]
+B --> C[Evaluation]
+C --> D[Results]
 ```
 
 ---
 
-## 🧠 5) Key Contributions (as claimed by the authors)
-- C1: (e.g., novel algorithm / new theoretical result / new dataset / new benchmark / new application)
-- C2: 
-- C3: 
-- (Mark **type**: Method / Empirical / Resource / Theory / System / Application)
+## 🧠 5. **Key Contributions**
 
-> **Verification note:** Which sections/figures substantiate each claim? List figure/table numbers next to each contribution.
+*(Summarize in bullet points the novel ideas claimed by the authors.)*
 
----
+* 🧩 C1:
+* ⚙️ C2:
+* 📊 C3:
+* 💡 C4 (if any):
 
-## 📈 6) Results and Analysis
-**Main findings**
-- Summarize the 2–4 most important quantitative/qualitative results.
-
-**Comparisons**
-- Baselines or prior methods used for comparison; fairness of setup.
-
-**Statistical validity**
-- Tests used, effect sizes, confidence intervals, variance reporting, ablations.
-
-**Robustness / Sensitivity**
-- Sensitivity to hyperparameters, dataset shifts, missing data, outliers.
-
-**Limitations (from results)**
-- Failure modes, edge cases, unexpected behaviors.
-
-**(Optional table: Key numbers)**
-| Metric | Proposed | Best Baseline | Δ (abs) | Δ (%) | Notes |
-|---|---:|---:|---:|---:|---|
-| Example metric | 0.842 | 0.793 | +0.049 | +6.2 | … |
-
-**(Optional figure: Recreate main chart idea)**
-```
-[Insert Figure Placeholder: e.g., Performance vs. Data Size]
-x-axis: data size; y-axis: accuracy; lines: methods
-```
+📷 *Figure reference:* *Figure 3: Overview of proposed architecture.*
 
 ---
 
-## 🔍 7) Discussion / Interpretation
-- What do the results *mean*? Practical significance vs. statistical significance.
-- Competing explanations? Alternative hypotheses?
-- Internal validity (method soundness), construct validity (metrics fit), external validity (generalizability).
-- Ethical, legal, or societal implications.
-- How does this shift the current consensus or open new questions?
+## 📈 6. **Results and Analysis**
 
-**(Optional figure: Causal or conceptual map)**
-```mermaid
-graph TD
-Cause1 --> Outcome
-Cause2 --> Outcome
-Outcome --> Impact
+**6.1. Summary of Findings**
+
+* Highlight key numerical or qualitative outcomes.
+
+**6.2. Comparative Evaluation**
+
+|  Metric | Proposed | Baseline | Δ (%) | Notes |
+| ------: | -------: | -------: | ----: | ----- |
+| Example |     0.89 |     0.75 | +18.7 | —     |
+
+**6.3. Interpretation of Results**
+
+* What do these results *mean* in context?
+* Are differences practically significant?
+
+**6.4. Limitations & Biases**
+
+* Mention any dataset bias, overfitting, or scalability issues.
+
+📊 **Figure Suggestion:** “Performance Comparison Chart”
+
+```
+[Graph Placeholder – x-axis: Baseline Methods, y-axis: Accuracy/Metric]
 ```
 
 ---
 
-## 🧩 8) Connections & Positioning in the Literature
-- How does this paper relate to 3–6 closest works? Agreement/disagreement?
-- Which gap does it still leave open?
-- How will you **cite** this paper in your own review (1–2 sentences, neutral tone)?
-- Keywords you’ll use to cluster this with others.
+## 🔍 7. **Discussion / Insights**
 
-> **Synthesis anchor:** One sentence placing it on your review map (e.g., “bridges X and Y by doing Z”).
+**7.1. Field Advancement**
 
----
+* How does this work move the research frontier forward?
 
-## 🧾 9) Critical Appraisal (Your Review)
-**Scores (1–5)**
-- Novelty: []
-- Rigor / Soundness: []
-- Clarity / Organization: []
-- Reproducibility / Transparency: []
-- Impact / Significance: []
-- Ethics / Safety: []
-- Writing / Presentation: []
+**7.2. Broader Implications**
 
-**Strengths**
-- S1:
-- S2:
+* Theoretical, practical, or ethical consequences.
 
-**Weaknesses / Threats to validity**
-- W1:
-- W2:
+**7.3. Unexpected Observations**
 
-**Replicability checklist**
-- [ ] Code link & license
-- [ ] Data availability or synthetic generator
-- [ ] Configs / seeds / full hyperparameters
-- [ ] Environment description (versions)
-- [ ] Exact steps to reproduce main tables/figures
+* Any contradictions or counterintuitive findings.
+
+**7.4. Connections to Other Domains**
+
+* Could this approach inspire progress in another field?
+
+🧭 *Figure reference:* *Figure 4: Conceptual relationship diagram.*
 
 ---
 
-## 🚀 10) Key Takeaways & Next Actions
-- **One-sentence takeaway:** 
-- **Top 3 insights:** 1) … 2) … 3) …
-- **Open questions for future work:** 
-- **Follow-up actions:** (replicate a figure, test a component, add to review section X)
-- **Quotable lines (≤2):**
+## 🧾 8. **Critical Evaluation (Your Review)**
 
-**(Optional figure: “So-what” diagram)**
+**8.1. Rating (1–5)**
+
+| Criterion              | Score | Comment |
+| ---------------------- | :---: | ------- |
+| Novelty                |       |         |
+| Technical Soundness    |       |         |
+| Clarity / Organization |       |         |
+| Experimental Rigor     |       |         |
+| Reproducibility        |       |         |
+| Impact / Applicability |       |         |
+| Overall Impression     |       |         |
+
+**8.2. Strengths**
+
+* S1:
+* S2:
+
+**8.3. Weaknesses / Threats to Validity**
+
+* W1:
+* W2:
+
+📘 **Figure Reference:** “Table 4: Strengths vs Weaknesses Summary.”
+
+---
+
+## 🚀 9. **Key Takeaways & Future Directions**
+
+**9.1. Top 3 Insights**
+1.
+2.
+3.
+
+**9.2. Lessons Learned**
+
+* What you personally learned or could apply elsewhere.
+
+**9.3. Future Work / Open Questions**
+
+* What remains unsolved?
+* What could be improved or generalized?
+
+**9.4. Ideas Sparked for Further Reading or Projects**
+
+* Add references or keywords for exploration.
+
+📈 **Figure Suggestion:** “Future Research Roadmap”
+
 ```
-Finding → Implication → Actionable next step
+Idea → Gap → Next Study → Application
 ```
 
 ---
 
-## 📎 Appendix (optional but useful)
-- **Verbatim notes** (copy brief quotes or equations; keep under fair use)
-- **Terminology / Symbols** (glossary)
-- **Errata & author responses** (if any)
-- **Personal reminders** (what to re-check later)
+### 🗂️ At-a-Glance Summary Card
+
+| Field                    | Entry |
+| :----------------------- | :---- |
+| Core Topic               |       |
+| Study Type               |       |
+| Data / Environment       |       |
+| Key Metric               |       |
+| Best Result              |       |
+| Code/Data Availability   |       |
+| Citable Summary Sentence |       |
 
 ---
-
-## 🗂️ At-a-glance Card (for literature matrix)
-| Field | Entry |
-|------|------|
-| Core Topic |  |
-| Study Type |  |
-| Method Family |  |
-| Data/Env |  |
-| Primary Metric |  |
-| Best Result |  |
-| Code/Data? |  |
-| Citable Sentence |  |
-
