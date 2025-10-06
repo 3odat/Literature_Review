@@ -1,9 +1,3 @@
-Got it 👍—you want a **clean, professional, and visually enhanced template** for reading and summarizing research papers, not project-specific.
-Here’s the **refined and beautifully formatted version**, perfect for Obsidian, Notion, or a research log.
-It includes **sub-sections for figures/tables**, placeholders for visual material, and consistent headings.
-
----
-
 # 📚 Literature Review Template (Professional Academic Format)
 
 ---
